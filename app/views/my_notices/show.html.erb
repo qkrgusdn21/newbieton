@@ -1,0 +1,8 @@
+<% @result["title"].each do |k| %>
+  <p><%=k %></p>
+  <% notice_title= MyNotice.new %>
+  <% notice_title.title = k %>
+  <% notice_title.save %>
+<% end %>
+
+
